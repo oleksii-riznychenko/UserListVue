@@ -1,0 +1,25 @@
+.home-page-container {
+  margin: 0 auto;
+  max-width: 600px;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .user-list {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .filter-user-form__body {
+      align-items: flex-start;
+      flex-direction: column;
+
+      .input-container {
+        max-width: 100%;
+      }
+    }
+  }
+}

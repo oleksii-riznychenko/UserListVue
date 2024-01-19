@@ -1,0 +1,9 @@
+.list-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .button-ui--icon {
+    margin-left: 10px;
+  }
+}

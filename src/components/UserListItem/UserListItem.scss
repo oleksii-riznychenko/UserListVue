@@ -1,0 +1,52 @@
+.user-list-item {
+  padding: 10px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 20px;
+  justify-content: space-between;
+  transition: var(--transition-main);
+  border: 1px solid var(--color-gray);
+
+  &:hover {
+    background-color: var(--color-gray-light);
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+  }
+
+  &__avatar {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    overflow: hidden;
+    border-radius: 15px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:has(.face-man-icon) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__content {
+    margin-left: 20px;
+
+    p, h3 {
+      margin: 0;
+      overflow: hidden;
+      display: -webkit-box;
+      word-break: break-all;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
